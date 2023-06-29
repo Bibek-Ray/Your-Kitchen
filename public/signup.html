@@ -56,14 +56,17 @@ crossorigin="anonymous">
 		document.getElementById("signupForm").addEventListener('submit', async function(event){
 			event.preventDefault();
 
-    		const email = document.getElementById('email').value;
+    			const name = document.getElementById('name').value;
+    			const email = document.getElementById('email').value;
+			const password = document.getElementById('password').value;
+			const phone = document.getElementById('phone').value;
 			
 			const response = await fetch('/sign_up', {
       			method: 'POST',
       			headers: {
       			  'Content-Type': 'application/json'
       			},
-      			body: JSON.stringify({ email })
+      			body: JSON.stringify({ name, email, password, phone })
     		});
 
 			if (response.ok) {
