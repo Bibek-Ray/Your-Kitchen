@@ -1,0 +1,14 @@
+span:hover{
+    color: green;
+}
+.invisible{
+    visibility: hidden;
+}
+@media only screen and (max-width: 536px){
+    .logo{
+        height: 45px !important; 
+    }
+}
+.hamburger{
+    font-size: 2rem;
+}

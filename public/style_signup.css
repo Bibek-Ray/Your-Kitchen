@@ -1,0 +1,60 @@
+.formBox{
+	margin-left: 225px ;
+	margin-top: 100px ;
+}
+body{
+	background-color: ivory;
+}
+body > div{
+	padding: 0px !important;
+	margin: 0px !important;
+}
+
+.custom-style{
+	display: flex;
+}
+.company{
+	color: #4d7e3e;
+}
+.ImageBox img{
+	width: 475px;
+	height: auto;
+}
+input:not([type="submit"]){
+	font-family: 'Helvetica', serif;
+	width: 100%;
+	font-size: 20px;
+	padding: 12px 20px;
+	margin: 8px 0;
+	border: none;
+	border-bottom: 1px solid #4d7e3e;
+}
+input[type="submit"]{
+	border-radius: 5px;
+	border: none;
+	background-color: #0f8cda;
+	padding: 10px;
+}
+@media only screen and (max-width: 600px) {
+	.formBox{
+		margin-left: 0px;
+		scale: 0.9;
+	}
+	.ImageBox img{
+		display: none;
+	}
+	body{
+		background-image: url("https://i.postimg.cc/wBKythm3/hannah-busing-5we-Ptvu-Cy-E-unsplash.jpg");
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: 700px;
+	}
+	.signup{
+		background-color: rgba(204, 218, 209, 0.4);
+		border-radius: 15px;
+		padding: 25x;
+		color: rgb(251, 251, 251);
+		font-size: 2rem;
+		font-weight: bolder;
+	}
+  }

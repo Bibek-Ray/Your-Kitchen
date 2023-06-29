@@ -1,0 +1,747 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="shopping.css">
+    <link rel="icon" href="your-kitchen-website-favicon-color.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <title>Shopping</title>
+</head>
+<body style = "background-color: ivory;">
+    <!-- Header -->
+    <section class = "Header">
+      <header>
+          <div class="px-3 py-2 text-bg-dark">
+            <div class="container">
+              <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+                <a href="index.html" class="d-flex align-items-center my-2 my-lg-0 me-lg-auto text-white text-decoration-none">
+                  <img class="logo" src = "your-kitchen-high-resolution-logo-color-on-transparent-background.png" height = "50px">
+                </a>
+
+                <i class="bi bi-list hamburger" data-bs-toggle="collapse" href="#navbar-items" role="button" aria-expanded="false" aria-controls="navbar-items"></i>
+
+                  <ul class="nav col-12 col-lg-auto my-2 justify-content-center my-md-0 text-small collapse" id="navbar-items">
+                    <li>
+                      <a href="index.html" class="nav-link text-white d-flex align-items-center">
+                        <svg class="bi d-block mx-auto mb-1" width="24" height="24"><use xlink:href="#home"></use></svg>
+                        <span>Home</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="Latest Kitchen Designs.html" class="nav-link text-white d-flex align-items-center">
+                        <svg class="bi d-block mx-auto mb-1" width="24" height="24"><use xlink:href="#speedometer2"></use></svg>
+                        <span>Kitchen Designs</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="What's today's menu.html" class="nav-link text-white d-flex align-items-center">
+                        <svg class="bi d-block mx-auto mb-1" width="24" height="24"><use xlink:href="#table"></use></svg>
+                        <span>What's Today's Menu?</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="Shopping.html" class="nav-link text-white d-flex align-items-center">
+                        <svg class="bi d-block mx-auto mb-1" width="24" height="24"><use xlink:href="#grid"></use></svg>
+                        <span>Shopping</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="Kitchen For All.html" class="nav-link text-white d-flex align-items-center">
+                        <svg class="bi d-block mx-auto mb-1" width="24" height="24"><use xlink:href="#people-circle"></use></svg>
+                        <span>Kitchen For All</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="Contact us.html" class="nav-link text-white d-flex align-items-center">
+                        <svg class="bi d-block mx-auto mb-1" width="24" height="24"><use xlink:href="#people-circle"></use></svg>
+                        <span>Contact us</span>
+                      </a>
+                    </li>
+                  </ul>
+
+                  
+
+              </div>
+            </div>
+          </div>
+          <div class="px-3 py-2 border-bottom mb-3">
+            <!-- <div class="container d-flex flex-wrap justify-content-center">
+              <div class="text-end">
+                <button type="button" class="btn btn-light text-dark me-2">Login</button>
+                <button type="button" class="btn btn-primary">Sign-up</button>
+              </div>
+            </div> -->
+          </div>
+        </header>
+  </section>
+    <!-- Advertisement-->
+    <section class="container-fluid">
+      <div class="position-relative overflow-hidden text-center">
+        <div class="col-md-12 p-lg-0 mx-auto">
+          <div class="d-flex justify-content-center lead fw-normal">
+            <img src="sale.png" class="img-fluid fade-in" style="max-width: 100%; height: auto;">
+          </div>
+        </div>
+        <div class="product-device shadow-sm d-none d-md-block"></div>
+        <div class="product-device product-device-2 shadow-sm d-none d-md-block"></div>
+      </div>
+    </section>
+    <!-- Lower Body -->
+    <div class="container mt-5">
+      <div class="row">
+        <div class="col-lg-2 minimizer">
+          <!-- Filter Section -->
+          <div class="filter-section">
+              <h6 class="filter-head p-2" data-bs-toggle="collapse" href="#filterCollapse" role="button" aria-expanded="true" aria-controls="filterCollapse">Filters</h6>
+              <div id="filterCollapse" class="collapse">
+              <div class="pt-2" id="Cutlery">
+
+                  <div class="parent">
+                  <p class="filter-font sign sign1 collapsed" data-bs-toggle="collapse" href="#cutleryCollapse" role="button" aria-expanded="false" aria-controls="cutleryCollapse">
+                      <span class="text">Cutlery</span>
+                      <span class="icon"><i class="sign align-end bi bi-plus-circle"></i></span>
+                  </p>
+                  </div>
+
+                <div class="list-group p-3 collapse filter-elements" id="cutleryCollapse">
+                  <label class="list-group-item d-flex gap-2 pl-4">
+                    <input class="form-check-input flex-shrink-0" type="checkbox" value="">
+                    <span>Brand</span>
+                  </label>
+                  <label class="list-group-item d-flex gap-2 pl-4">
+                    <input class="form-check-input flex-shrink-0" type="checkbox" value="">
+                    <span>Color</span>
+                  </label>
+                  <label class="list-group-item d-flex gap-2 pl-4">
+                    <input class="form-check-input flex-shrink-0" type="checkbox" value="">
+                    <span>Material</span>
+                  </label>
+                </div>
+              </div>
+
+              <div class="col-10 offset-1 separator"></div>
+
+              <div class="pt-2" id="Vegetables">
+
+                <div class="parent">
+                <p class="filter-font sign sign2 collapsed" data-bs-toggle="collapse" href="#vegetablesCollapse" role="button" aria-expanded="false" aria-controls="vegetablesCollapse">
+                  <span class="text">Vegetables</span>
+                  <span class="icon"><i class="sign align-end bi bi-plus-circle"></i></span>
+                </p>
+                </div>
+
+                <div class="list-group p-3 collapse filter-elements" id="vegetablesCollapse">
+                  <label class="list-group-item d-flex gap-2 pl-4">
+                    <input class="form-check-input flex-shrink-0" type="checkbox" value="">
+                    <span>Leafy Greens</span>
+                  </label>
+                  <label class="list-group-item d-flex gap-2 pl-4">
+                    <input class="form-check-input flex-shrink-0" type="checkbox" value="">
+                    <span>Cruciferous Veggies</span>
+                  </label>
+                  <label class="list-group-item d-flex gap-2 pl-4">
+                    <input class="form-check-input flex-shrink-0" type="checkbox" value="">
+                    <span>Root Vegetables</span>
+                  </label>
+                </div>
+              </div>
+
+              <div class="col-10 offset-1 separator"></div>
+
+              <div class="pt-2" id="Fruits">
+
+                <div class="parent">
+                <p class="filter-font sign sign3 collapsed" data-bs-toggle="collapse" href="#fruitsCollapse" role="button" aria-expanded="false" aria-controls="fruitsCollapse">
+                <span class="text">Fruits</span>
+                <span class="icon"><i class="sign align-end bi bi-plus-circle"></i></span>
+              </p>
+              </div>
+
+                <div class="list-group p-3 collapse filter-elements" id="fruitsCollapse">
+                  <label class="list-group-item d-flex gap-2 pl-4">
+                    <input class="form-check-input flex-shrink-0" type="checkbox" value="">
+                    <span>Berries</span>
+                  </label>
+                  <label class="list-group-item d-flex gap-2 pl-4">
+                    <input class="form-check-input flex-shrink-0" type="checkbox" value="">
+                    <span>Tropical</span>
+                  </label>
+                  <label class="list-group-item d-flex gap-2 pl-4">
+                    <input class="form-check-input flex-shrink-0" type="checkbox" value="">
+                    <span>Citrus</span>
+                  </label>
+                </div>
+
+              </div>
+
+              <div class="col-10 offset-1 separator"></div>
+
+              <div class="pt-2" id="Spices">
+
+                <div class="parent">
+                <p class="filter-font sign sign4 collapsed" data-bs-toggle="collapse" href="#spicesCollapse" role="button" aria-expanded="false" aria-controls="spicesCollapse">
+                <span class="text">Oils & Spices</span>
+                <span class="icon"><i class="sign align-end bi bi-plus-circle"></i>
+                </span></p>
+              </div>
+                <div class="list-group p-3 collapse filter-elements" id="spicesCollapse">
+                  <label class="list-group-item d-flex gap-2 pl-4">
+                    <input class="form-check-input flex-shrink-0" type="checkbox" value="">
+                    <span>Spices</span>
+                  </label>
+                  <label class="list-group-item d-flex gap-2 pl-4">
+                    <input class="form-check-input flex-shrink-0" type="checkbox" value="">
+                    <span>Oils</span>
+                  </label>
+                </div>
+              </div>
+              </div>
+            </div>              
+        </div>
+
+
+        <div class="col-lg-9 offset-lg-1 minimizer-down">
+          
+          <!-- Product Tiles Section -->
+          <div class="product-tiles">
+            <div class="scrollable-section">
+              
+              <h3>Cutlery</h3>
+              <hr>         
+              
+              <div class="d-flex">
+                  <button class="left-button col-1 lb1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-compact-left" viewBox="0 0 16 16">
+                      <path fill-rule="evenodd" d="M9.224 1.553a.5.5 0 0 1 .223.67L6.56 8l2.888 5.776a.5.5 0 1 1-.894.448l-3-6a.5.5 0 0 1 0-.448l3-6a.5.5 0 0 1 .67-.223z"/>
+                    </svg></button>
+                  <button class="right-button col-1 offset-lg-11 offset-10 rb1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-compact-right" viewBox="0 0 16 16">
+                      <path fill-rule="evenodd" d="M6.776 1.553a.5.5 0 0 1 .671.223l3 6a.5.5 0 0 1 0 .448l-3 6a.5.5 0 1 1-.894-.448L9.44 8 6.553 2.224a.5.5 0 0 1 .223-.671z"/>
+                      </svg></button>
+              </div>
+                
+
+              <div class="row overflow-auto flex-nowrap custom-style scrollside1">
+
+                  
+
+                <!-- Add cutlery products here -->
+                <div class="col cardplay">
+                  <div class="card shadow-sm">
+                    <img src="https://mcdnnew.ellementry.com/media/resize/600/600/catalog/product/s/s/sstea2660_00.jpg" >
+                      <div class="card-body">
+                        <h6 class="card-text">Norah rose gold hammered cutlery set of 4</h6>
+                        <a href="#" class="btn btn-primary">Buy Now <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
+                          <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
+                        </svg></a>
+                      </div>
+                  </div>
+                </div>
+
+                <div class="col cardplay">
+                  <div class="card shadow-sm">
+                    <img src="https://mcdnnew.ellementry.com/media/resize/600/600/catalog/product/w/d/wdtea2898_00.jpg">
+                      <div class="card-body">
+                        <h6 class="card-text">Laimai oval salad server set of 2</h6>
+                        <a href="#" class="btn btn-primary">Buy Now <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
+                          <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
+                        </svg></a>
+                      </div>
+                  </div>
+                </div>
+
+                <div class="col cardplay">
+                  <div class="card shadow-sm">
+                    <img src="https://mcdnnew.ellementry.com/media/resize/600/600/catalog/product/s/s/sstea2659_00.jpg" class="bd-placeholder-img card-img-top" width="100px" height="100%">
+                      <div class="card-body">
+                        <h6 class="card-text">norah gold hammered cutlery set of 4</h6>
+                        <a href="#" class="btn btn-primary">Buy Now <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
+                          <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
+                        </svg></a>
+                      </div>
+                  </div>
+                </div>
+
+                <div class="col cardplay">
+                  <div class="card shadow-sm">
+                    <img src="https://mcdnnew.ellementry.com/media/resize/600/600/catalog/product/s/s/sstea2738_00.jpg" class="bd-placeholder-img card-img-top" width="100px" height="100%">
+                      <div class="card-body">
+                        <h6 class="card-text">norah gold hammered cake server set of 2</h6>
+                        <a href="#" class="btn btn-primary">Buy Now <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
+                          <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
+                        </svg></a>
+                      </div>
+                  </div>
+                </div>
+
+                <div class="col cardplay">
+                  <div class="card shadow-sm">
+                    <img src="https://mcdnnew.ellementry.com/media/resize/600/600/catalog/product/s/s/sstea2736_00.jpg" class="bd-placeholder-img card-img-top" width="100px" height="100%">
+                      <div class="card-body">
+                        <h6 class="card-text">norah rose gold hammered handle cake server set of 2</h6>
+                        <a href="#" class="btn btn-primary">Buy Now <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
+                          <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
+                        </svg></a>
+                      </div>
+                  </div>
+                </div>
+
+                <div class="col cardplay">
+                  <div class="card shadow-sm">
+                    <img src="https://mcdnnew.ellementry.com/media/resize/600/600/catalog/product/s/s/sstea2735_00.jpg" class="bd-placeholder-img card-img-top" width="100px" height="100%">
+                      <div class="card-body">
+                        <h6 class="card-text">norah rose gold hammered handle ladle set of 2</h6>
+                        <a href="#" class="btn btn-primary">Buy Now <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
+                          <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
+                        </svg></a>
+                      </div>
+                  </div>
+                </div>
+
+                <div class="col cardplay">
+                  <div class="card shadow-sm">
+                    <img src="https://mcdnnew.ellementry.com/media/resize/600/600/catalog/product/b/r/brtea2523_00.jpg" class="bd-placeholder-img card-img-top" width="100px" height="100%">
+                      <div class="card-body">
+                        <h6 class="card-text">celestial brass biryani & kebab set of 3</h6>
+                        <a href="#" class="btn btn-primary">Buy Now <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
+                          <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
+                        </svg></a>
+                      </div>
+                  </div>
+                </div>
+
+          </div>
+              
+            </div>
+            <div class="scrollable-section">
+              <hr>
+              <h3>Vegetables</h3>
+              <hr>
+
+              <div class="d-flex">
+                  <button class="left-button col-1 lb2"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-compact-left" viewBox="0 0 16 16">
+                      <path fill-rule="evenodd" d="M9.224 1.553a.5.5 0 0 1 .223.67L6.56 8l2.888 5.776a.5.5 0 1 1-.894.448l-3-6a.5.5 0 0 1 0-.448l3-6a.5.5 0 0 1 .67-.223z"/>
+                    </svg></button>
+                      <button class="right-button col-1 offset-lg-11 offset-10 rb2"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-compact-right" viewBox="0 0 16 16">
+                      <path fill-rule="evenodd" d="M6.776 1.553a.5.5 0 0 1 .671.223l3 6a.5.5 0 0 1 0 .448l-3 6a.5.5 0 1 1-.894-.448L9.44 8 6.553 2.224a.5.5 0 0 1 .223-.671z"/>
+                      </svg></button>
+              </div>
+
+              <div class="row overflow-auto flex-nowrap custom-style scrollside2">
+
+                <!-- Add vegetable products here -->
+
+                <div class="col cardplay">
+                  <div class="card shadow-sm">
+                    <img src="https://greenleafonline.net/media/catalog/product/cache/1/small_image/250x250/9df78eab33525d08d6e5fb8d27136e95/c/o/corriander-leaves-50g.jpg" >
+                      <div class="card-body">
+                        <h6 class="card-text">Coriander Leaves(Dhaniya)</h6>
+                        <a href="#" class="btn btn-primary">Buy at <span style="color: greenyellow;">₹99.00</span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
+                          <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
+                        </svg></a>
+                      </div>
+                  </div>
+                </div>
+
+                <div class="col cardplay">
+                  <div class="card shadow-sm">
+                    <img src="https://greenleafonline.net/media/catalog/product/cache/1/small_image/250x250/9df78eab33525d08d6e5fb8d27136e95/p/a/palak.jpg" >
+                      <div class="card-body">
+                        <h6 class="card-text">Spinach Leaves(Palak)</h6>
+                        <a href="#" class="btn btn-primary">Buy at <span style="color: greenyellow;">₹99.00</span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
+                          <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
+                        </svg></a>
+                      </div>
+                  </div>
+                </div>
+
+                <div class="col cardplay">
+                  <div class="card shadow-sm">
+                    <img src="https://greenleafonline.net/media/catalog/product/cache/1/small_image/250x250/9df78eab33525d08d6e5fb8d27136e95/m/i/mint.jpeg" >
+                      <div class="card-body">
+                        <h6 class="card-text">Mint Leaves(Pudina)</h6>
+                        <a href="#" class="btn btn-primary">Buy at <span style="color: greenyellow;">₹99.00</span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
+                          <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
+                        </svg></a>
+                      </div>
+                  </div>
+                </div>
+
+                <div class="col cardplay">
+                  <div class="card shadow-sm">
+                    <img src="https://greenleafonline.net/media/catalog/product/cache/1/small_image/250x250/9df78eab33525d08d6e5fb8d27136e95/g/a/garlic.jpg" >
+                      <div class="card-body">
+                        <h6 class="card-text">Garlic</h6>
+                        <a href="#" class="btn btn-primary">Buy at <span style="color: greenyellow;">₹99.00</span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
+                          <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
+                        </svg></a>
+                      </div>
+                  </div>
+                </div>
+                
+                <div class="col cardplay">
+                  <div class="card shadow-sm">
+                    <img src="https://greenleafonline.net/media/catalog/product/cache/1/small_image/250x250/9df78eab33525d08d6e5fb8d27136e95/b/r/broccolly.jpg" >
+                      <div class="card-body">
+                        <h6 class="card-text">Brocolli</h6>
+                        <a href="#" class="btn btn-primary">Buy at <span style="color: greenyellow;">₹102.00</span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
+                          <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
+                        </svg></a>
+                      </div>
+                  </div>
+                </div>
+
+                <div class="col cardplay">
+                  <div class="card shadow-sm">
+                    <img src="https://greenleafonline.net/media/catalog/product/cache/1/small_image/250x250/9df78eab33525d08d6e5fb8d27136e95/s/m/small-peeled-onion-500x500.jpg" >
+                      <div class="card-body">
+                        <h6 class="card-text">Small Peeled Onion [200g]</h6>
+                        <a href="#" class="btn btn-primary">Buy at <span style="color: greenyellow;">₹99.00</span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
+                          <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
+                        </svg></a>
+                      </div>
+                  </div>
+                </div>
+
+                <div class="col cardplay">
+                  <div class="card shadow-sm">
+                    <img src="https://greenleafonline.net/media/catalog/product/cache/1/small_image/250x250/9df78eab33525d08d6e5fb8d27136e95/c/h/cherry-tomato-red3-500x500.jpg" >
+                      <div class="card-body">
+                        <h6 class="card-text">Tomato</h6>
+                        <a href="#" class="btn btn-primary">Buy at <span style="color: greenyellow;">₹99.00</span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
+                          <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
+                        </svg></a>
+                      </div>
+                  </div>
+                </div>
+
+                <div class="col cardplay">
+                  <div class="card shadow-sm">
+                    <img src="https://greenleafonline.net/media/catalog/product/cache/1/small_image/250x250/9df78eab33525d08d6e5fb8d27136e95/b/a/baby_pototoi.jpg" >
+                      <div class="card-body">
+                        <h6 class="card-text">Baby Potato [500g]</h6>
+                        <a href="#" class="btn btn-primary">Buy at <span style="color: greenyellow;">₹99.00</span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
+                          <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
+                        </svg></a>
+                      </div>
+                  </div>
+                </div>
+
+                <div class="col cardplay">
+                  <div class="card shadow-sm">
+                    <img src="https://greenleafonline.net/media/catalog/product/cache/1/small_image/250x250/9df78eab33525d08d6e5fb8d27136e95/b/r/brinjal_bartha.jpg" >
+                      <div class="card-body">
+                        <h6 class="card-text">Brinjal [500g]</h6>
+                        <a href="#" class="btn btn-primary">Buy at <span style="color: greenyellow;">₹99.00</span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
+                          <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
+                        </svg></a>
+                      </div>
+                  </div>
+                </div>
+
+                <div class="col cardplay">
+                  <div class="card shadow-sm">
+                    <img src="https://greenleafonline.net/media/catalog/product/cache/1/small_image/250x250/9df78eab33525d08d6e5fb8d27136e95/s/w/sweet_corn.jpg" >
+                      <div class="card-body">
+                        <h6 class="card-text">Sweet Corn [1Pc]</h6>
+                        <a href="#" class="btn btn-primary">Buy at <span style="color: greenyellow;">₹99.00</span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
+                          <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
+                        </svg></a>
+                      </div>
+                  </div>
+                </div>
+
+                <div class="col cardplay">
+                  <div class="card shadow-sm">
+                    <img src="https://greenleafonline.net/media/catalog/product/cache/1/small_image/250x250/9df78eab33525d08d6e5fb8d27136e95/c/a/capsicum_green_1.jpg" >
+                      <div class="card-body">
+                        <h6 class="card-text">Green Capsicum [250g]</h6>
+                        <a href="#" class="btn btn-primary">Buy at <span style="color:greenyellow">₹19.90</span> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
+                          <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
+                        </svg></a>
+                      </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+            <div class="scrollable-section">
+              <hr>
+              <h3>Fruits</h3>
+              <hr>
+
+              <div class="d-flex">
+                  <button class="left-button col-1 lb3"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-compact-left" viewBox="0 0 16 16">
+                      <path fill-rule="evenodd" d="M9.224 1.553a.5.5 0 0 1 .223.67L6.56 8l2.888 5.776a.5.5 0 1 1-.894.448l-3-6a.5.5 0 0 1 0-.448l3-6a.5.5 0 0 1 .67-.223z"/>
+                    </svg></button>
+                  <button class="right-button col-1 offset-lg-11 offset-10 rb3"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-compact-right" viewBox="0 0 16 16">
+                      <path fill-rule="evenodd" d="M6.776 1.553a.5.5 0 0 1 .671.223l3 6a.5.5 0 0 1 0 .448l-3 6a.5.5 0 1 1-.894-.448L9.44 8 6.553 2.224a.5.5 0 0 1 .223-.671z"/>
+                      </svg></button>
+              </div>
+
+              <div class="row overflow-auto flex-nowrap custom-style scrollside3">
+                <!-- Add fruit products here -->
+                <div class="col cardplay">
+                  <div class="card shadow-sm">
+                    <img src="https://greenleafonline.net/media/catalog/product/cache/1/small_image/250x250/9df78eab33525d08d6e5fb8d27136e95/k/i/kiran-watermelon-250x250.jpg" >
+                      <div class="card-body">
+                        <h6 class="card-text">Watermelon 1 PC [2 kgs]</h6>
+                        <a href="#" class="btn btn-primary">Buy at <span style="color:greenyellow">₹72.00</span> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
+                          <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
+                        </svg></a>
+                      </div>
+                  </div>
+                </div>
+                <div class="col cardplay">
+                  <div class="card shadow-sm">
+                    <img src="https://greenleafonline.net/media/catalog/product/cache/1/small_image/250x250/9df78eab33525d08d6e5fb8d27136e95/c/a/cavendish-banana-500x500.jpg" >
+                      <div class="card-body">
+                        <h6 class="card-text">Cavendish Banana [500g]</h6>
+                        <a href="#" class="btn btn-primary">Buy at <span style="color:greenyellow">₹31.00</span> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
+                          <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
+                        </svg></a>
+                      </div>
+                  </div>
+                </div>
+                <div class="col cardplay">
+                  <div class="card shadow-sm">
+                    <img src="https://greenleafonline.net/media/catalog/product/cache/1/small_image/250x250/9df78eab33525d08d6e5fb8d27136e95/m/u/mussambi.jpeg" >
+                      <div class="card-body">
+                        <h6 class="card-text">Musambi [500g]</h6>
+                        <a href="#" class="btn btn-primary">Buy at <span style="color:greenyellow">₹37.00</span> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
+                          <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
+                        </svg></a>
+                      </div>
+                  </div>
+                </div>
+                <div class="col cardplay">
+                  <div class="card shadow-sm">
+                    <img src="https://greenleafonline.net/media/catalog/product/cache/1/small_image/250x250/9df78eab33525d08d6e5fb8d27136e95/p/o/pomegranate-fruit-1.jpg" >
+                      <div class="card-body">
+                        <h6 class="card-text">Pomegranate [500 g]</h6>
+                        <a href="#" class="btn btn-primary">Buy at <span style="color:greenyellow">₹111.00</span> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
+                          <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
+                        </svg></a>
+                      </div>
+                  </div>
+                </div>
+                <div class="col cardplay">
+                  <div class="card shadow-sm">
+                    <img src="https://greenleafonline.net/media/catalog/product/cache/1/small_image/250x250/9df78eab33525d08d6e5fb8d27136e95/x/_/x_145.jpg" >
+                      <div class="card-body">
+                        <h6 class="card-text">Mango Alphonso [500g]</h6>
+                        <a href="#" class="btn btn-primary">Buy at <span style="color:greenyellow">₹19.90</span> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
+                          <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
+                        </svg></a>
+                      </div>
+                  </div>
+                </div>
+                <div class="col cardplay">
+                  <div class="card shadow-sm">
+                    <img src="https://greenleafonline.net/media/catalog/product/cache/1/small_image/250x250/9df78eab33525d08d6e5fb8d27136e95/p/i/pineapple.png" >
+                      <div class="card-body">
+                        <h6 class="card-text">Pineapple 1 PC [1.4 kg]</h6>
+                        <a href="#" class="btn btn-primary">Buy at <span style="color:greenyellow">₹128.00</span> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
+                          <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
+                        </svg></a>
+                      </div>
+                  </div>
+                </div>
+                <div class="col cardplay">
+                  <div class="card shadow-sm">
+                    <img src="https://greenleafonline.net/media/catalog/product/cache/1/small_image/250x250/9df78eab33525d08d6e5fb8d27136e95/o/r/orange_1.jpg" >
+                      <div class="card-body">
+                        <h6 class="card-text">Orange [500g]</h6>
+                        <a href="#" class="btn btn-primary">Buy at <span style="color:greenyellow">₹47.00</span> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
+                          <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
+                        </svg></a>
+                      </div>
+                  </div>
+                </div>
+                <div class="col cardplay">
+                  <div class="card shadow-sm">
+                    <img src="https://greenleafonline.net/media/catalog/product/cache/1/small_image/250x250/9df78eab33525d08d6e5fb8d27136e95/a/p/apple_2.jpg" >
+                      <div class="card-body">
+                        <h6 class="card-text">Apple [500g]</h6>
+                        <a href="#" class="btn btn-primary">Buy at <span style="color:greenyellow">₹116.00</span> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
+                          <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
+                        </svg></a>
+                      </div>
+                  </div>
+                </div>
+                <div class="col cardplay">
+                  <div class="card shadow-sm">
+                    <img src="https://greenleafonline.net/media/catalog/product/cache/1/small_image/250x250/9df78eab33525d08d6e5fb8d27136e95/b/l/black-grapes-sed.jpg" >
+                      <div class="card-body">
+                        <h6 class="card-text">Black Grapes Juice [500g]</h6>
+                        <a href="#" class="btn btn-primary">Buy at <span style="color:greenyellow">₹47.00</span> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
+                          <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
+                        </svg></a>
+                      </div>
+                  </div>
+                </div>
+                <div class="col cardplay">
+                  <div class="card shadow-sm">
+                    <img src="https://greenleafonline.net/media/catalog/product/cache/1/small_image/250x250/9df78eab33525d08d6e5fb8d27136e95/c/a/capsicum_green_1.jpg" >
+                      <div class="card-body">
+                        <h6 class="card-text">Green Capsicum [250g]</h6>
+                        <a href="#" class="btn btn-primary">Buy at <span style="color:greenyellow">₹19.90</span> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
+                          <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
+                        </svg></a>
+                      </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="scrollable-section">
+              <hr>
+              <h3>Oils & Spices</h3>
+              <hr>
+              
+              <div class="d-flex">
+                  <button class="left-button col-1 lb4"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-compact-left" viewBox="0 0 16 16">
+                      <path fill-rule="evenodd" d="M9.224 1.553a.5.5 0 0 1 .223.67L6.56 8l2.888 5.776a.5.5 0 1 1-.894.448l-3-6a.5.5 0 0 1 0-.448l3-6a.5.5 0 0 1 .67-.223z"/>
+                    </svg></button>
+                  <button class="right-button col-1 offset-lg-11 offset-10 rb4"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-compact-right" viewBox="0 0 16 16">
+                      <path fill-rule="evenodd" d="M6.776 1.553a.5.5 0 0 1 .671.223l3 6a.5.5 0 0 1 0 .448l-3 6a.5.5 0 1 1-.894-.448L9.44 8 6.553 2.224a.5.5 0 0 1 .223-.671z"/>
+                      </svg></button>
+              </div>
+
+              <div class="row overflow-auto flex-nowrap custom-style scrollside4">
+                <!-- Add spice products here -->
+                <div class="col cardplay">
+                  <div class="card shadow-sm">
+                    <img src="https://greenleafonline.net/media/catalog/product/cache/1/small_image/250x250/9df78eab33525d08d6e5fb8d27136e95/f/r/fruitomans_kasori.jpg" >
+                      <div class="card-body">
+                        <h6 class="card-text">Fruitomans Kasoori Methi [30G]</h6>
+                        <a href="#" class="btn btn-primary">Buy at <span style="color: greenyellow;">₹30.00</span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
+                          <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
+                        </svg></a>
+                      </div>
+                  </div>
+                </div>
+
+                <div class="col cardplay">
+                  <div class="card shadow-sm">
+                    <img src="https://greenleafonline.net/media/catalog/product/cache/1/small_image/250x250/9df78eab33525d08d6e5fb8d27136e95/b/r/brahmins_garam.jpg" >
+                      <div class="card-body">
+                        <h6 class="card-text">Brahmins Garam Masala [50g]</h6>
+                        <a href="#" class="btn btn-primary">Buy at <span style="color: greenyellow;">₹46.00</span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
+                          <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
+                        </svg></a>
+                      </div>
+                  </div>
+                </div>
+
+                <div class="col cardplay">
+                  <div class="card shadow-sm">
+                    <img src="https://greenleafonline.net/media/catalog/product/cache/1/small_image/250x250/9df78eab33525d08d6e5fb8d27136e95/k/t/kt_biriyani.png" >
+                      <div class="card-body">
+                        <h6 class="card-text">Kitchen Treasures Biryani Masala [100g]</h6>
+                        <a href="#" class="btn btn-primary">Buy at <span style="color: greenyellow;">₹54.00</span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
+                          <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
+                        </svg></a>
+                      </div>
+                  </div>
+                </div>
+                <div class="col cardplay">
+                  <div class="card shadow-sm">
+                    <img src="https://greenleafonline.net/media/catalog/product/cache/1/small_image/250x250/9df78eab33525d08d6e5fb8d27136e95/d/r/dry_chilli.jpg" >
+                      <div class="card-body">
+                        <h6 class="card-text">Dry Chilli Loose</h6>
+                        <a href="#" class="btn btn-primary">Buy at <span style="color: greenyellow;">₹399.00</span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
+                          <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
+                        </svg></a>
+                      </div>
+                  </div>
+                </div>
+
+                <div class="col cardplay">
+                  <div class="card shadow-sm">
+                    <img src="https://greenleafonline.net/media/catalog/product/cache/1/small_image/250x250/9df78eab33525d08d6e5fb8d27136e95/x/_/x_385_1.jpeg" >
+                      <div class="card-body">
+                        <h6 class="card-text">KLF Coconut Oil [1 L]</h6>
+                        <a href="#" class="btn btn-primary">Buy at <span style="color: greenyellow;">₹195.00</span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
+                          <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
+                        </svg></a>
+                      </div>
+                  </div>
+                </div>
+
+                <div class="col cardplay">
+                  <div class="card shadow-sm">
+                    <img src="https://greenleafonline.net/media/catalog/product/cache/1/small_image/250x250/9df78eab33525d08d6e5fb8d27136e95/n/a/nambisans.jpg" >
+                      <div class="card-body">
+                        <h6 class="card-text">Nambisans Ghee [500G]</h6>
+                        <a href="#" class="btn btn-primary">Buy at <span style="color: greenyellow;">₹450.00</span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
+                          <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
+                        </svg></a>
+                      </div>
+                  </div>
+                </div>
+
+                <div class="col cardplay">
+                  <div class="card shadow-sm">
+                    <img src="https://greenleafonline.net/media/catalog/product/cache/1/small_image/250x250/9df78eab33525d08d6e5fb8d27136e95/b/r/brahmins_turmeric.jpg" >
+                      <div class="card-body">
+                        <h6 class="card-text">Brahmins Turmeric Powder [100G]</h6>
+                        <a href="#" class="btn btn-primary">Buy at <span style="color: greenyellow;">₹30.00</span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
+                          <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
+                        </svg></a>
+                      </div>
+                  </div>
+                </div>
+
+                <div class="col cardplay">
+                  <div class="card shadow-sm">
+                    <img src="https://greenleafonline.net/media/catalog/product/cache/1/small_image/250x250/9df78eab33525d08d6e5fb8d27136e95/k/t/kt_chilli_1.jpg" >
+                      <div class="card-body">
+                        <h6 class="card-text">Kitchen Treasure Chilli Powder [100G]</h6>
+                        <a href="#" class="btn btn-primary">Buy at <span style="color: greenyellow;">₹42.00</span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
+                          <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
+                        </svg></a>
+                      </div>
+                  </div>
+              </div>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <section class="container">
+      <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top mt-5">
+        <div class="col-md-4 d-flex align-items-center">
+          <a href="index.html" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
+            <img src="Small logo.png" height = "30" width = "30">
+          </a>
+          <span class="mb-3 mb-md-0 text-body-secondary">© 2023 Your Kitchen, Inc</span>
+        </div>
+      
+        <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+          <li class="ms-3"><a class="text-body-secondary" href="https://twitter.com/major_ray291"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
+            <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
+          </svg></a></li>
+          <li class="ms-3"><a class="text-body-secondary" href="https://www.instagram.com/its_bibek.291/"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+      <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+      </svg></a></li>
+          <li class="ms-3"><a class="text-body-secondary" href="https://www.facebook.com/bibek.ray.9461"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-meta" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M8.217 5.243C9.145 3.988 10.171 3 11.483 3 13.96 3 16 6.153 16.001 9.907c0 2.29-.986 3.725-2.757 3.725-1.543 0-2.395-.866-3.924-3.424l-.667-1.123-.118-.197a54.944 54.944 0 0 0-.53-.877l-1.178 2.08c-1.673 2.925-2.615 3.541-3.923 3.541C1.086 13.632 0 12.217 0 9.973 0 6.388 1.995 3 4.598 3c.319 0 .625.039.924.122.31.086.611.22.913.407.577.359 1.154.915 1.782 1.714Zm1.516 2.224c-.252-.41-.494-.787-.727-1.133L9 6.326c.845-1.305 1.543-1.954 2.372-1.954 1.723 0 3.102 2.537 3.102 5.653 0 1.188-.39 1.877-1.195 1.877-.773 0-1.142-.51-2.61-2.87l-.937-1.565ZM4.846 4.756c.725.1 1.385.634 2.34 2.001A212.13 212.13 0 0 0 5.551 9.3c-1.357 2.126-1.826 2.603-2.581 2.603-.777 0-1.24-.682-1.24-1.9 0-2.602 1.298-5.264 2.846-5.264.091 0 .181.006.27.018Z"/>
+          </svg></a></li>
+        </ul>
+      </footer>
+      </section>
+    <script src="navbar.js"></script>
+    <script src="shopping.js"></script>  
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+  </body>
+
+</html>

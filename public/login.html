@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="style_login.css">
+    <title>Login</title>
+</head>
+<body>
+    
+    <div class="modal position-static d-block py-5" tabindex="-1" role="dialog" id="modalSignin">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content rounded-4 shadow">
+          <div class="modal-header p-5 pb-4 border-bottom-0">
+            <!-- <h1 class="modal-title fs-5" >Modal title</h1> -->
+            <h1 class="fw-bold mb-0 fs-2">Login</h1>
+          </div>
+    
+          <div class="modal-body p-5 pt-0">
+            <form action="/login" method="post" id="myForm">
+              <div class="form-floating mb-3">
+                <input type="email" name="email" class="form-control rounded-3" id="floatingInput" placeholder="name@example.com">
+                <label for="floatingInput">Email address</label>
+              </div>
+              <div class="form-floating mb-3">
+                <input type="password" name="password" class="form-control rounded-3" id="floatingPassword" placeholder="Password">
+                <label for="floatingPassword">Password</label>
+              </div>
+              <small class="text-danger" >Incorrect Password or Email address.</small>
+              <button class="w-100 mb-2 btn btn-lg rounded-3 btn-primary" type="submit">Login</button>
+            </form>
+            <div class="text-center">
+                <br>
+                <small class="text-secondary"><a href="signup.html" style="color: rgb(111, 109, 109);">Don't have an account? Signup Now!</a></small>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="b-example-divider"></div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+        <script>
+          const form = document.getElementById('myForm');
+
+          form.addEventListener('submit', async (event) => {
+          event.preventDefault();
+
+          const formData = new FormData(form);
+          const email = formData.get('email');
+          const password = formData.get('password');
+
+          const response = await fetch('/login', {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({ email, password })
+          });
+          
+          if (response.status === 200) {
+            const result = await response.json();
+            const name = result.name;
+            // Store the name in local storage
+            localStorage.setItem('name', name);
+            // Login successful, proceed to the welcome page
+            window.location.href = '/index.html'; // Replace '/welcome.html' with your actual welcome page URL
+          } else {
+            const result = await response.json();
+            console.log(result);
+            if (response.status === 401) {
+              // Incorrect password, update CSS to show error message
+              $('.text-danger').css('visibility', 'visible');
+            } else if (response.status === 404) {
+              // User not found, redirect to sign-up page
+              window.location.href = '/signup.html'; // Replace '/signup.html' with your actual sign-up page URL
+            } else {
+              // Other error occurred
+              console.error(result.error);
+            }
+          }
+        });
+        </script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>    
+      </body>
+</html>
