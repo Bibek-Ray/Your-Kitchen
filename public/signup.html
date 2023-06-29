@@ -67,6 +67,7 @@ crossorigin="anonymous">
     		});
 
 			if (response.ok) {
+				window.location.href = '/login.html';
     		  // Signup successful, proceed as needed
     		} else {
     		  const result = await response.json();
