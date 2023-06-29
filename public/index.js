@@ -44,6 +44,6 @@ window.addEventListener('load', function() {
     setTimeout(function() {
       document.getElementById('preloader').remove();
     }, 500); // Adjust the time to match the fade-out duration
-  }, 2000); // Adjust the time to simulate the loading delay
+  }, 500); // Adjust the time to simulate the loading delay
 
 });
