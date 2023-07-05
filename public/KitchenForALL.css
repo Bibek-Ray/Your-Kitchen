@@ -24,6 +24,13 @@
     background-repeat: no-repeat;
     background-size: auto;
   }
+  .location{
+    display: flex;
+  }
+  iframe{
+    width: 500px;
+    height: 500px;
+  }
   @keyframes shake-animation {
     0% { transform: rotate(-5deg); }
     50% { transform: rotate(5deg); }
@@ -38,6 +45,13 @@
       }
       .cook-pot, .eat-food{
         width: 400px !important;
+      }
+      .location{
+        display: block;
+      }
+      iframe{
+        width: 400px;
+        height: auto;
       }
   }
   .advertisement-text{
