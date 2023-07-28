@@ -41,3 +41,9 @@ The website is designed with the following pages:
 - MongoDB: NoSQL database for storing user information and data.
 - Email.js: Library for sending emails directly from the web application.
 - jQuery: Fast, small, and feature-rich JavaScript library for simplifying client-side scripting.
+
+## Demo
+
+https://github.com/Bibek-Ray/Your-Kitchen/assets/82962780/bb209a71-8faf-4632-9213-58b3f69655e1
+
+
