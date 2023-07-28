@@ -3,7 +3,14 @@ Full-stack MERN web development project.
 
 Get a preview here: https://your-kitchen.onrender.com
 
-Your-Kitchen is a web application that provides a platform for chefs and customers to connect and share their culinary experiences. It allows users to explore various kitchen services, hire chefs for events, and discover new recipes.
+Your-Kitchen is a web application that provides a platform for chefs and customers to connect and share their culinary experiences. It allows users to explore various kitchen related services:
+
+- User can register themselves to the website with their own credentials and password. 
+- Discover new recipes, which includes blog or videos.
+- Find latest interior designs of kitchen.
+- Users can have a platform for establishing their own personal food delivery service.
+- Users can have a platform for palacing orders to the different food delivery services.
+- Wide variety of cutlery and groceries can be browsed and purchased through the website.
 
 ## Features
 
