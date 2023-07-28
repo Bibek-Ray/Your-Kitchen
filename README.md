@@ -3,26 +3,33 @@ Full-stack MERN web development project.
 
 Get a preview here: https://your-kitchen.onrender.com
 
-Your-Kitchen is a web application that provides a platform for chefs and customers to connect and share their culinary experiences. It allows users to explore various kitchen related services:
-
-- User can register themselves to the website with their own credentials and password. 
-- Discover new recipes, which includes blog or videos.
-- Find latest interior designs of kitchen.
-- Users can have a platform for establishing their own personal food delivery service.
-- Users can have a platform for palacing orders to the different food delivery services.
-- Wide variety of cutlery and groceries can be browsed and purchased through the website.
+Your-Kitchen is a web application that provides a platform for chefs and customers to connect and share their culinary experiences. It allows users to explore various kitchen related services.
 
 ## Features
 
-- **Customer Registration**: Customers can sign up, browse through a wide range of chefs, and book them for their events or culinary experiences.
+The website is designed with the following pages: 
 
-- **Kitchen Design**: Get inspired by exploring our kitchen design section, featuring innovative and stylish kitchen designs for your home.
+- **Home**: User can register themselves to the website with their own credentials and password.
 
-- **What's Today's Menu**: Discover the daily menu offerings prepared by talented chefs. Get inspired to try new recipes or order meals directly from the menu.
+  
+- **What's Today's Menu?**: Discover new recipes, which includes blog or videos.
 
-- **Shopping**: Explore our curated kitchen essentials and accessories selection. Find high-quality cookware, utensils, groceries, and more to enhance your culinary journey. 
+  
+- **Kitchen Designs**: Find latest interior designs of kitchen.
 
-- **Contact Us**: Have questions or feedback? Contact us through the Contact Us page, and our team will be happy to assist you.
+  
+-  **Kitchen For All**:
+  
+    - Users can have a platform for establishing their own personal food delivery service.
+      
+    - Users can have a platform for palacing orders to the different food delivery services.
+ 
+  
+- **Shopping**: Wide variety of cutlery and groceries can be browsed and purchased through the website.
+
+
+- **Contact us**: User can provide their feedback through the contact us page
+
 
 ## Technologies Used
 
